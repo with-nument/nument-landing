@@ -1,0 +1,258 @@
+// Home page: hero and showcase. Shared sections live in src/ui/sections.module.scss.
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: auto;
+  padding-bottom: 0;
+}
+
+// Same crop as the Playbook cover: the orange core sits above the viewport, only the periwinkle rim shows.
+.heroGradient {
+  top: -1090px;
+  opacity: 0.95;
+
+  @media (min-width: 768px) {
+    top: -1215px;
+  }
+}
+
+.heroContent {
+  padding-top: 0;
+  padding-bottom: 72px;
+
+  @media (min-width: 768px) {
+    padding-top: 12px;
+    padding-bottom: 88px;
+  }
+}
+
+.ornament {
+  filter: drop-shadow(0 0 6px rgba(106, 136, 226, 0.6)) brightness(0) invert(1);
+}
+
+// Kit ruled badge, used as a quiet link to the founding offer.
+.badge {
+  transition: opacity 200ms var(--ease-standard);
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.h1 {
+  margin-top: 28px !important;
+
+  @media (min-width: 768px) {
+    margin-top: 32px !important;
+  }
+}
+
+.heroLead {
+  max-width: 760px;
+  text-wrap: balance;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 22px;
+  margin-top: 28px;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    color: var(--color-tx-tertiary);
+  }
+
+  svg {
+    color: var(--indigo-600);
+  }
+
+  @media (max-width: 767px) {
+    gap: 8px 14px;
+
+    li {
+      font-size: 13px;
+    }
+  }
+}
+
+.heroWa {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  font-size: 14px;
+  color: var(--color-tx-tertiary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: var(--indigo-800);
+  }
+}
+
+.brDesk {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+/* ---------- Showcase ---------- */
+.showcase {
+  position: relative;
+  // Kit: the showcase is pulled up into the hero so the first screen shows the product.
+  margin-top: calc(var(--section-gap-mobile) * -0.6);
+
+  @media (min-width: 768px) {
+    margin-top: calc(var(--section-gap) * -1);
+  }
+}
+
+// Faint dot grid with a soft spotlight behind the mock.
+.dots {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(51, 51, 204, 0.13) 1px, transparent 1.2px);
+  background-size: 22px 22px;
+  -webkit-mask: radial-gradient(70% 65% at 50% 45%, #000 20%, transparent 75%);
+  mask: radial-gradient(70% 65% at 50% 45%, #000 20%, transparent 75%);
+}
+
+// Kit "sliding-pill filter": one glossy black pill slides and resizes to the active tab.
+.segWrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0 -14px;
+    padding: 0 14px;
+    width: calc(100% + 28px);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.seg {
+  position: relative;
+  display: inline-flex;
+  gap: 2px;
+  padding: 5px;
+  border-radius: var(--radius-full);
+  background: rgba(240, 240, 240, 0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.segPill {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 0;
+  border-radius: var(--radius-full);
+  background: #15161f;
+  border: 2px solid rgba(252, 252, 252, 0.25);
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.3), 0 8px 18px -8px rgba(21, 22, 31, 0.6);
+  transition: transform 0.45s cubic-bezier(0.34, 1.1, 0.64, 1), width 0.45s cubic-bezier(0.34, 1.1, 0.64, 1);
+}
+
+.segBtn {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-tx);
+  white-space: nowrap;
+  transition: color 0.3s var(--ease-standard);
+
+  &[aria-selected='true'] {
+    color: var(--color-tx-inverse);
+  }
+
+  &:not([aria-selected='true']):hover {
+    color: var(--indigo-800);
+  }
+
+  @media (max-width: 767px) {
+    padding: 9px 16px;
+    font-size: 15px;
+  }
+}
+
+.panel {
+  position: relative;
+  min-height: 700px;
+  padding: 28px 40px 28px;
+  justify-content: space-between;
+  gap: 40px;
+  background: radial-gradient(60% 55% at 50% 40%, #fff 0%, rgba(255, 255, 255, 0) 70%), linear-gradient(180deg, #eef2ff 0%, #f8f9ff 55%, #fff 100%);
+
+  @media (max-width: 767px) {
+    min-height: 600px;
+    padding: 14px 14px 18px;
+    gap: 28px;
+  }
+}
+
+.mock {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mock[hidden] {
+  display: none;
+}
+
+.mockOn {
+  animation: fade-in 450ms var(--ease-reveal);
+}
+
+.sample {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-tx-tertiary);
+  text-align: center;
+}
+
+
+// Local copies of kit keyframes (names inside CSS modules are scoped, so the global ones are not visible here).
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

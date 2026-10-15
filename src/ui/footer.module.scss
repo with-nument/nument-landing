@@ -1,0 +1,79 @@
+.brand {
+  width: 260px;
+  justify-content: space-between;
+}
+
+.tagline {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-tx-tertiary);
+}
+
+.cols {
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-st);
+  font-size: 13px;
+  color: var(--color-tx-tertiary);
+  margin-bottom: -24px;
+
+  @media (min-width: 768px) {
+    margin-bottom: -64px;
+  }
+}
+
+.sound {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  color: var(--color-tx-tertiary);
+  transition: background-color 200ms var(--ease-standard), color 200ms;
+
+  &:hover {
+    background: var(--color-sf-tertiary);
+    color: var(--color-tx);
+  }
+
+  &[aria-pressed='true'] {
+    color: var(--indigo-800);
+  }
+}
+
+.giantWrap {
+  overflow: hidden;
+  line-height: 0;
+}
+
+.giant {
+  // The Playbook cover gradient: periwinkle to lilac to peach.
+  --footer-art: linear-gradient(180deg, #c7d2fe 0%, #a5bbfc 30%, #e9d5f5 62%, #fddcce 100%);
+  font-size: clamp(110px, 25vw, 360px);
+  letter-spacing: -0.06em;
+  line-height: 0.78;
+  margin-bottom: -0.12em;
+  user-select: none;
+}
+
+.legalLink {
+  margin-left: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: var(--indigo-800);
+  }
+}

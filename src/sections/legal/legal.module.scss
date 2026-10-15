@@ -1,0 +1,67 @@
+// Kit legal / article layout: 680px column, 16px/1.65 body, 20px block rhythm.
+
+.legal {
+  width: min(680px, 88%);
+  margin: 0 auto;
+  padding-top: 140px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--color-tx-secondary);
+
+  @media (min-width: 768px) {
+    padding-top: 168px;
+  }
+
+  h2 {
+    margin: 40px 0 12px;
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 450;
+    line-height: 1.25;
+    color: var(--color-tx);
+  }
+
+  p,
+  ul {
+    margin: 0 0 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    list-style: disc;
+  }
+
+  b {
+    font-weight: var(--fw-medium);
+    color: var(--color-tx);
+  }
+
+  a {
+    color: var(--indigo-800);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.title {
+  margin-top: 12px;
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-tx);
+
+  @media (min-width: 768px) {
+    font-size: 52px;
+  }
+}
+
+.updated {
+  margin-top: 12px !important;
+  font-size: 14px;
+  color: var(--color-tx-tertiary);
+}

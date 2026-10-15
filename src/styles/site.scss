@@ -1,0 +1,76 @@
+// Site-wide additions on top of the kit (tokens.css + kit.css). Kit values win; these only fill gaps.
+
+html {
+  scroll-behavior: auto;
+  background: var(--color-bg);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  overflow-x: clip;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Indigo emphasis phrase inside display headings (kit: one indigo phrase per heading, no italics).
+.em {
+  color: var(--indigo-800);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+// Small tag pill used on cards (kit stories pattern).
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  background: var(--color-sf-secondary);
+  border: 1px solid var(--color-sf-tertiary);
+  font-size: 12px;
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+  color: var(--color-tx-tertiary);
+  white-space: nowrap;
+}
+
+.tag--indigo {
+  background: var(--indigo-50);
+  border-color: var(--indigo-200);
+  color: var(--indigo-700);
+}
+
+.tag--concept {
+  background: #fff;
+  border: 1px dashed var(--indigo-300);
+  color: var(--indigo-700);
+}
+
+// Header sits over the hero; anchors land below it.
+[id] {
+  scroll-margin-top: 88px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
