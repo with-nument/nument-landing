@@ -5,7 +5,7 @@
 The website of **Nument**, an AI and software studio in Gurugram, India. We design, build and launch websites, apps, AI assistants and automation for founders and growing businesses.
 
 - Website: [nument.in](https://nument.in)
-- Email: [contact@nument.in](mailto:contact@nument.in)
+- Email: [heyy.abhigyan@gmail.com](mailto:heyy.abhigyan@gmail.com)
 
 ---
 

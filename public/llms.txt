@@ -4,7 +4,7 @@
 
 - Fixed quote within 48 hours of a free 30 minute call. First working version in 7 days, then weekly demos. Payments in milestones. Clients own the code, design and data.
 - Starting prices: websites from ₹50,000, AI assistants from ₹1,00,000, automation from ₹75,000, web and mobile apps from ₹1,50,000.
-- Contact: contact@nument.in. Book a call: https://nument.in/contact
+- Contact: heyy.abhigyan@gmail.com. Book a call: https://nument.in/contact
 
 ## Pages
 - [Home](https://nument.in/): services, work, process, FAQ

@@ -1,5 +1,5 @@
 const contact = {
-  email: 'contact@nument.in',
+  email: 'heyy.abhigyan@gmail.com',
   // Cal.com booking link without the domain, e.g. 'yourname/30min'.
   // While empty, "Book a call" falls back to opening an email.
   calLink: 'abhigyan-numentai/intro-call',
