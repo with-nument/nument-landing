@@ -8,7 +8,7 @@ const industries = {
     tint: 'indigo',
     art: '/img/concept-clinic.webp',
     seo: {
-      title: 'Nument for clinics | Websites and WhatsApp booking assistants',
+      title: 'Clinic Websites and WhatsApp Booking Assistants | Nument',
       description: 'A clinic website patients trust and an AI assistant that books visits and sends reminders on WhatsApp. Built by Nument, from ₹1L.',
     },
     hero: {
@@ -47,7 +47,7 @@ const industries = {
     tint: 'pink',
     art: '/img/concept-d2c.webp',
     seo: {
-      title: 'Nument for D2C brands | Fast stores and AI shopping assistants',
+      title: 'D2C Stores and AI Shopping Assistants | Nument',
       description: 'A fast store, an AI assistant that answers shoppers in seconds, and WhatsApp flows that bring back abandoned carts. Built by Nument, from ₹1.5L.',
     },
     hero: {
@@ -119,7 +119,7 @@ const industries = {
     tint: 'green',
     art: '/img/concept-coaching.webp',
     seo: {
-      title: 'Nument for coaching institutes | Enquiry follow-up and student apps',
+      title: 'Coaching Institute Apps and Enquiry Automation | Nument',
       description: 'Every enquiry answered in a minute, demo classes booked automatically, and one simple app for classes, tests and fees. Built by Nument, from ₹1.5L.',
     },
     hero: {

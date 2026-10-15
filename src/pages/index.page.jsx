@@ -1,14 +1,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { ConceptsSection, FaqSection, FilmSection, FoundingSection, ProcessSection, ProofBar, ServicesSection, WorkSection } from '@src/ui/Sections';
 import CtaBand from '@src/ui/CtaBand';
-import CustomHead from '@src/components/dom/CustomHead';
+import CustomHead, { faqSchema, rupees, serviceSchema } from '@src/components/dom/CustomHead';
+import { FAQ, SERVICES } from '@src/constants/site';
 import Hero from '@src/sections/home/Hero';
 import Showcase from '@src/sections/home/Showcase';
 
 const seo = {
-  title: 'Nument | AI and software studio for growing businesses',
-  description: 'Nument is an AI and software studio in Gurugram. We design and build websites, apps, AI assistants and automation for founders and growing businesses, with fixed prices from ₹50K.',
-  keywords: ['Nument', 'AI and software studio', 'website development Gurugram', 'app development India', 'AI assistant for business', 'WhatsApp automation', 'AI agency India'],
+  title: 'Nument | Website, App and AI Development Studio in Gurugram',
+  description: 'Nument designs and builds websites, apps, AI assistants and WhatsApp automation for growing businesses in India. Fixed quotes, first version in 7 days.',
+  schema: [...SERVICES.map((sv) => serviceSchema({ name: sv.title, description: sv.desc, url: '/#services', minPrice: rupees(sv.from) })), faqSchema(FAQ)],
 };
 
 function Page() {

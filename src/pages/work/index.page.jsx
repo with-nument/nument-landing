@@ -4,9 +4,9 @@ import CtaBand from '@src/ui/CtaBand';
 import CustomHead from '@src/components/dom/CustomHead';
 
 const seo = {
-  title: 'Work | Nument',
-  description:
-    'Real products built by Nument: Veraawell, a mental health platform used by 1,000+ people, and Voicely, our in-house AI voice agent. Plus concepts for clinics, D2C brands and coaching institutes.',
+  title: 'Our Work: Veraawell and Voicely | Nument',
+  description: 'Real products by Nument: Veraawell, a mental health platform used by 1,000+ people, and Voicely, our AI voice agent. Plus concepts for your industry.',
+  breadcrumbs: [{ name: 'Work', path: '/work' }],
 };
 
 export default function WorkPage() {

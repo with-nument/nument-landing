@@ -8,7 +8,11 @@ const UPDATED = '15 October 2026';
 export default function PrivacyPage() {
   return (
     <>
-      <CustomHead title="Privacy | Nument" description="How Nument handles the little personal data this website collects." />
+      <CustomHead
+        title="Privacy Policy | Nument"
+        description="How Nument handles the little personal data this website collects: what we keep, why, and how to ask us to delete it."
+        breadcrumbs={[{ name: 'Privacy', path: '/privacy' }]}
+      />
       <article className={s.legal}>
         <span className="eyebrow">Privacy</span>
         <h1 className={s.title}>Privacy policy</h1>

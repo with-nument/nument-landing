@@ -2,15 +2,17 @@
 import { FaqSection, PageHero } from '@src/ui/Sections';
 import Cal from '@calcom/embed-react';
 import { FAQ } from '@src/constants/site';
-import CustomHead from '@src/components/dom/CustomHead';
+import CustomHead, { faqSchema } from '@src/components/dom/CustomHead';
 import Icon from '@src/ui/Icon';
 import clsx from 'clsx';
 import contact, { whatsappUrl } from '@src/constants/contact';
 import s from '@src/sections/contact/contact.module.scss';
 
 const seo = {
-  title: 'Contact | Nument',
+  title: 'Contact Nument | Book a Free 30 Minute Call',
   description: 'Book a free 30 minute call with Nument. Tell us what you want to build and get honest advice and a fixed quote within 48 hours.',
+  breadcrumbs: [{ name: 'Contact', path: '/contact' }],
+  schema: [faqSchema(FAQ.slice(0, 5))],
 };
 
 const NEXT = [

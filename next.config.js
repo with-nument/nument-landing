@@ -26,6 +26,12 @@ const nextConfig = {
     return config;
   },
   headers: async () => [
+    // The *.vercel.app copy of the site must never compete with nument.in in search results.
+    {
+      source: '/:path*',
+      has: [{ type: 'host', value: '(?<sub>.*)\\.vercel\\.app' }],
+      headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+    },
     {
       source: '/(.*)',
       headers: [

@@ -1,0 +1,16 @@
+# Nument
+
+> Nument is an AI and software studio in Gurugram, India. We design, build and launch websites, web and mobile apps, AI assistants (chat, WhatsApp and voice) and business automation for founders and growing businesses across India.
+
+- Fixed quote within 48 hours of a free 30 minute call. First working version in 7 days, then weekly demos. Payments in milestones. Clients own the code, design and data.
+- Starting prices: websites from ₹50,000, AI assistants from ₹1,00,000, automation from ₹75,000, web and mobile apps from ₹1,50,000.
+- Contact: contact@nument.in. Book a call: https://nument.in/contact
+
+## Pages
+- [Home](https://nument.in/): services, work, process, FAQ
+- [Work](https://nument.in/work): Veraawell (client: mental health platform, 1,000+ people, 50+ verified therapists) and Voicely (in-house AI voice agent, ~600 ms response)
+- [Clinics and healthcare](https://nument.in/for/clinics): clinic websites and WhatsApp booking assistants
+- [D2C brands](https://nument.in/for/d2c-brands): fast stores and AI shopping assistants
+- [Coaching institutes](https://nument.in/for/coaching): student apps and enquiry follow-up automation
+- [About](https://nument.in/about)
+- [Contact](https://nument.in/contact)

@@ -3,7 +3,7 @@ import { AppMock, AssistantMock, AutomationMock, WebsiteMock } from '@src/ui/moc
 import { FaqSection, FoundingSection, PageHero, ProcessSection, SectionHead } from '@src/ui/Sections';
 import { BookButton } from '@src/ui/Button';
 import CtaBand from '@src/ui/CtaBand';
-import CustomHead from '@src/components/dom/CustomHead';
+import CustomHead, { faqSchema, rupees, serviceSchema } from '@src/components/dom/CustomHead';
 import Icon from '@src/ui/Icon';
 import clsx from 'clsx';
 import industries from '@src/constants/industries';
@@ -21,7 +21,12 @@ export default function IndustryPage({ slug }) {
 
   return (
     <>
-      <CustomHead title={d.seo.title} description={d.seo.description} />
+      <CustomHead
+        title={d.seo.title}
+        description={d.seo.description}
+        breadcrumbs={[{ name: d.label, path: `/for/${d.slug}` }]}
+        schema={[serviceSchema({ name: d.build.title, description: d.hero.sub, url: `/for/${d.slug}`, minPrice: rupees(d.from) }), faqSchema(d.faq)]}
+      />
       <PageHero
         eyebrow={d.hero.eyebrow}
         title={

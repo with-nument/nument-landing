@@ -5,7 +5,7 @@ import { PageHero } from '@src/ui/Sections';
 export default function Custom404() {
   return (
     <>
-      <CustomHead title="Page not found | Nument" description="This page does not exist. Head back home or book a free call with Nument." />
+      <CustomHead title="Page not found | Nument" description="This page does not exist. Head back home or book a free call with Nument." noindex />
       <PageHero
         eyebrow="404"
         title={

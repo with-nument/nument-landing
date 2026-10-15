@@ -15,7 +15,14 @@ export default function CasePage({ slug }) {
 
   return (
     <>
-      <CustomHead title={`${c.title} | Nument work`} description={c.summary} />
+      <CustomHead
+        title={c.seoTitle}
+        description={c.summary}
+        breadcrumbs={[
+          { name: 'Work', path: '/work' },
+          { name: c.title, path: `/work/${c.slug}` },
+        ]}
+      />
 
       <section className={clsx('container', s.hero)}>
         <Link href="/work" className={s.back}>

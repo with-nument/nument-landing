@@ -7,8 +7,9 @@ import clsx from 'clsx';
 import s from '@src/sections/about/about.module.scss';
 
 const seo = {
-  title: 'About | Nument',
-  description: 'Nument is an AI and software studio in Gurugram. We help founders and growing businesses build the websites, apps and AI tools they have been putting off.',
+  title: 'About Nument | AI and Software Studio in Gurugram',
+  description: 'Nument is an AI and software studio in Gurugram. We help founders and growing businesses build the websites, apps and AI tools they keep putting off.',
+  breadcrumbs: [{ name: 'About', path: '/about' }],
 };
 
 const PRINCIPLES = [
